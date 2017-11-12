@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.assignment1.Calculator">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="63dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operandB"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <Button
+        android:id="@+id/plusbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="onClickButtonPlus"
+        android:text="@string/plusbutton"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/minusbutton"
+        app:layout_constraintTop_toBottomOf="@+id/operandA" />
+
+    <EditText
+        android:id="@+id/operandA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/plusbutton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/minusbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:onClick="onClickButtonMinus"
+        android:text="@string/minusbutton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@id/plusbutton"
+        app:layout_constraintRight_toLeftOf="@id/multiplybutton"
+        app:layout_constraintTop_toBottomOf="@+id/operandA" />
+
+    <Button
+        android:id="@+id/multiplybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="onClickButtonMultiply"
+        android:text="@string/multiplybutton"
+        app:layout_constraintRight_toLeftOf="@id/dividebutton"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintLeft_toRightOf="@id/minusbutton"
+        app:layout_constraintTop_toBottomOf="@+id/operandA" />
+
+    <Button
+        android:id="@+id/dividebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="36dp"
+        android:onClick="onClickButtonDivide"
+        android:text="@string/dividebutton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintLeft_toRightOf="@id/multiplybutton"
+        app:layout_constraintTop_toBottomOf="@+id/operandA" />
+
+    <EditText
+        android:id="@+id/operandB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plusbutton" />
+
+</android.support.constraint.ConstraintLayout>

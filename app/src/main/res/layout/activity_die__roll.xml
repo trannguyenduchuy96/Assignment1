@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="@string/activity2"
+    tools:context="com.example.admin.assignment1.Die_Roll">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <CheckBox
+            android:id="@+id/savelog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rollbutton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/rollbutton"
+            android:layout_marginBottom="156dp"
+            android:text="@string/logcheckbox" />
+
+        <TextView
+            android:id="@+id/die1view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:layout_marginTop="100dp"
+            android:layout_toLeftOf="@+id/savelog"
+            android:layout_toStartOf="@+id/savelog"
+            android:textSize="40dp"
+            android:text="@string/defaultdievalue" />
+
+        <TextView
+            android:id="@+id/die2view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/die1view"
+            android:layout_alignBottom="@+id/die1view"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="62dp"
+            android:layout_marginRight="62dp"
+            android:text="@string/defaultdievalue"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/die3view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/savelog"
+            android:layout_alignLeft="@+id/die1view"
+            android:layout_alignStart="@+id/die1view"
+            android:layout_marginBottom="100dp"
+            android:textSize="40dp"
+            android:text="@string/defaultdievalue" />
+
+        <TextView
+            android:id="@+id/die4view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/die3view"
+            android:layout_alignBottom="@+id/die3view"
+            android:layout_alignLeft="@+id/die2view"
+            android:layout_alignStart="@+id/die2view"
+            android:text="@string/defaultdievalue"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/rollbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="47dp"
+            android:onClick="onClickButtonRoll"
+            android:text="@string/rollbutton" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rollbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

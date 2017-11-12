@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Assignment 1</string>
+    <string name="button1">Roll Die</string>
+    <string name="button2">Calculator</string>
+    <string name="button3">Log</string>
+    <string name="buttontestbed">TestBed</string>
+    <string name="buttontestbed2">TestBed2</string>
+    <string name="button5">Start</string>
+    <string name="button6">Stop</string>
+    <string name="button7">Get Time</string>
+    <string name="activity2">Die Roll</string>
+    <string name="activity3">Calculator</string>
+    <string name="activity4">Log</string>
+    <string name="plusbutton">+</string>
+    <string name="minusbutton">-</string>
+    <string name="multiplybutton">x</string>
+    <string name="dividebutton">/</string>
+    <string name="logcheckbox">Save log?</string>
+    <string name="defaultdievalue">0</string>
+    <string name="rollbutton">Roll!</string>
+    <string-array name="dienumber_array">
+        <item>1 die</item>
+        <item>2 dice</item>
+        <item>3 dice</item>
+        <item>4 dice</item>
+    </string-array>
+</resources>
